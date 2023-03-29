@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const StyledTextarea = styled.textarea`
     width: calc(100% - 32px);
-    ${(props) => 
+    ${(props) =>
         props.height &&
         `
         height: ${props.height}px;

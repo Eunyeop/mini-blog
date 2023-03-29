@@ -7,7 +7,6 @@ const Wrapper = styled.div`
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-
     & > * {
         :not(:last-child) {
             margin-bottom: 16px;
@@ -20,7 +19,7 @@ function PostList(props) {
 
     return (
         <Wrapper>
-            { posts.map((post, index) => {
+            {posts.map((post, index) => {
                 return (
                     <PostListItem
                         key={post.id}
@@ -28,7 +27,7 @@ function PostList(props) {
                         onClick={() => {
                             onClickItem(post);
                         }}
-                    />    
+                    />
                 );
             })}
         </Wrapper>

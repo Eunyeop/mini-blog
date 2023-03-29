@@ -5,23 +5,22 @@ import CommentListItem from "./CommentListItem";
 const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
-    align-itmes: flex-start;
+    align-items: flex-start;
     justify-content: center;
-
     & > * {
-        :not(:lsat-child) {
+        :not(:last-child) {
             margin-bottom: 16px;
         }
     }
 `;
 
 function CommentList(props) {
-    const { commnets } = props;
+    const { comments } = props;
 
     return (
         <Wrapper>
-            {commnets.map((comment, index) => {
-                return <CommentListItem key= {comment.id} comment={comment} />;
+            {comments.map((comment, index) => {
+                return <CommentListItem key={comment.id} comment={comment} />;
             })}
         </Wrapper>
     );

@@ -9,6 +9,7 @@ const Wrapper = styled.div`
     align-items: flex-start;
     justify-content: center;
     border: 1px solid grey;
+    border-radius: 8px;
     cursor: pointer;
     background: white;
     :hover {
@@ -18,7 +19,7 @@ const Wrapper = styled.div`
 
 const TitleText = styled.p`
     font-size: 20px;
-    font-wegiht: 500;
+    font-weight: 500;
 `;
 
 function PostListItem(props) {
